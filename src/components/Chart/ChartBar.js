@@ -5,7 +5,7 @@ import "./ChartBar.css";
 function ChartBar(props) {
   let barFillHeight = "0%"; //will be assigned as a css style
 
-  if (props.max > 0) {
+  if (props.maxValue > 0) {
     barFillHeight = Math.round((props.value / props.maxValue) * 100) + "%";
   }
 
